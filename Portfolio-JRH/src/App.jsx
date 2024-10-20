@@ -1,10 +1,10 @@
 import './App.css'
-import AboutMe from './components/Portfolio/AboutMe.jsx'
+import Sketch from './components/Sketch'
 
 function App() {
   return (
     <>
-      <AboutMe />
+      <Sketch />
     </>
   )
 }
