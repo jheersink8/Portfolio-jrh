@@ -1,4 +1,4 @@
-import projects from './ProjectsCompontents/assets/projects.js';
+import projects from '../../assets/JSON/projects.js';
 
 export default function Projects() {
     const listItems = projects.map(project =>

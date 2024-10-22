@@ -1,4 +1,4 @@
-import { languages, frameworks, tools } from './assets/future';
+import { languages, frameworks, tools } from '../../../assets/JSON/future';
 
 const languageItems = languages.map(language =>
     <li key={language.id}>

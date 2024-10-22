@@ -1,4 +1,4 @@
-import skills from './assets/skills';
+import skills from '../../../assets/JSON/skills';
 
 export default function Skills() {
     const listItems = skills.map(skill =>

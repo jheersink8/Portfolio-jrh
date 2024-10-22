@@ -1,4 +1,4 @@
-import timeline from './assets/timeline.js';
+import timeline from '../../../assets/JSON/timeline.js';
 
 export default function Timeline() {
 
