@@ -1,13 +1,21 @@
+import projects from './ProjectsCompontents/assets/projects.js';
+
 export default function Projects() {
+    const listItems = projects.map(project =>
+        <ul key={project.id}>
+            <li>{project.title}</li>
+            <li>{project.description}</li>
+            <li>{project.deployLink}</li>
+            <li>{project.githubLink}</li>
+        </ul>
+    );
+
     return (
         <>
             {/* Projects */}
             <div>
                 <h2>Web Development Projects</h2>
-
-
-                {/* I need project types that are each a component. For sure 'School Projects,' 'APIs,' 'Games,' and 'Misc Tools.' I need each component for each category to be descriptive? IDK. Play with this.*/}
-
+                {listItems}
             </div>
         </>
     );
