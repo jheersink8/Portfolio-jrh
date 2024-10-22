@@ -1,3 +1,23 @@
+import { languages, frameworks, tools } from './assets/future';
+
+const languageItems = languages.map(language =>
+    <li key={language.id}>
+        {language.learn}
+    </li>
+);
+
+const frameworkItems = frameworks.map(framework =>
+    <li key={framework.id}>
+        {framework.learn}
+    </li>
+);
+
+const toolItems = tools.map(tool =>
+    <li key={tool.id}>
+        {tool.learn}
+    </li>
+);
+
 export default function Future() {
     return (
         <>
@@ -6,26 +26,17 @@ export default function Future() {
 
             <h4>Programming Languages</h4>
             <ul>
-                <li>C#</li>
-                <li>Python</li>
-                <li>PHP</li>
-                <li>TypeScript</li>
+                {languageItems}
             </ul>
 
             <h4>Libraries & Frameworks</h4>
             <ul>
-                <li>Angular</li>
-                <li>D3</li>
-                <li>Next.js</li>
-                <li>Tailwind CSS</li>
+                {frameworkItems}
             </ul>
 
             <h4>Tools & Platforms</h4>
             <ul>
-                <li>AWS</li>
-                <li>Heroku</li>
-                <li>Netlify</li>
-                <li>Docker</li>
+                {toolItems}
             </ul>
         </>
     );
