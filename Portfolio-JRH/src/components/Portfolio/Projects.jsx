@@ -13,7 +13,7 @@ export default function Projects() {
     return (
         <>
             {/* Projects */}
-            <div>
+            <div id="projects">
                 <h2>Web Development Projects</h2>
                 {listItems}
             </div>
