@@ -17,17 +17,24 @@ function App() {
     setDarkTheme(!darkTheme);
   }
 
+  // Theme for master background //
+  const lightGradient = "linear-gradient(320deg, rgba(179,177,0,1) 0%, rgba(61,186,230,1) 29%, rgba(143,236,255,1) 67%)";
+  const darkGradient = "linear-gradient(158deg, rgba(2,0,36,1) 0%, rgba(21,93,159,1) 50%, rgba(12,125,148,1) 100%)";
+  const masterBackground = darkTheme ? darkGradient : lightGradient;
+
+
   return (
-    <>
-      <ThemeContext.Provider value={{ darkTheme, toggleTheme }}>
+      <div style={{ background: masterBackground }}>
+      <ThemeContext.Provider value={{ darkTheme, toggleTheme }} >
         <Nav />
+        <div className='p-4'></div>
         <Welcome />
         <AboutMe />
         <Projects />
         <Resume />
         <Footer />
       </ThemeContext.Provider>
-    </>
+    </div>
   )
 }
 
