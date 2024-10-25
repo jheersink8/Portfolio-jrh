@@ -1,4 +1,6 @@
-import './App.css'
+import '../src/assets/css/App.css';
+import '../src/assets/css/themeStyle.css';
+import '../src/bootstrap/custom.scss';
 
 import Nav from './components/Nav/Nav'
 import Welcome from './components/Portfolio/Welcome'
@@ -18,13 +20,10 @@ function App() {
   }
 
   // Theme for master background //
-  const lightGradient = "linear-gradient(320deg, rgba(179,177,0,1) 0%, rgba(61,186,230,1) 29%, rgba(143,236,255,1) 67%)";
-  const darkGradient = "linear-gradient(158deg, rgba(2,0,36,1) 0%, rgba(21,93,159,1) 50%, rgba(12,125,148,1) 100%)";
-  const masterBackground = darkTheme ? darkGradient : lightGradient;
-
+  const masterBackground = darkTheme ? 'darkGradientBackground' : 'lightGradientBackground';
 
   return (
-      <div style={{ background: masterBackground }}>
+    <div className={ masterBackground }>
       <ThemeContext.Provider value={{ darkTheme, toggleTheme }} >
         <Nav />
         <div className='p-4'></div>
