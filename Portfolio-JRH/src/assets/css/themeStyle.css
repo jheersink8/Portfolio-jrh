@@ -1,4 +1,18 @@
 /* THEME CHANGES */
+:root {
+    /* Dark Mode */
+    --defaultDarkBackground: #000000;
+    --defaultDarkText: #ffffff;
+    --pillDarkBackground: #ffffff;
+    --pillDarkText: #000000;
+
+    /* Light Mode */
+    --defaultLightBackground: #ffffff;
+    --defaultLightText: #000000;
+    --pillLightBackground: #000000;
+    --pillLightText: #ffffff;
+}
+
 /* Main Background */
 .darkGradientBackground {
     background: linear-gradient(158deg, rgba(2, 0, 36, 1) 0%, rgba(21, 93, 159, 1) 50%, rgba(12, 125, 148, 1) 100%);
@@ -11,24 +25,30 @@
 /* NAV */
 /* Background */
 .darkNav {
-    background-color: #000000;
-    color: white;
+    background-color: var(--defaultDarkBackground);
+    color: var(--defaultDarkText) !important;
 }
-
 .lightNav {
-    background-color: #ffffff;
-    color: black;
+    background-color: var(--defaultLightBackground);
+    color: var(--defaultLightText) !important;
 }
 
-/* Icons */
-.iconThemeDark {
-    color: #ffffff;
+/* Pills */
+.darkPill {
+    background-color: var(--defaultDarkBackground)!important;
+    color: var(--defaultDarkText) !important;
+}
+.lightPill {
+    background-color: var(--defaultLightBackground)!important;
+    color: var(--defaultLightText) !important;
 }
 
-.iconThemeLight {
-    color: #000000;
+.darkPill:hover {
+    background-color: var(--pillDarkBackground) !important;
+    color: var(--pillDarkText) !important;
+}
+.lightPill:hover {
+    background-color: var(--pillLightBackground) !important;
+    color: var(--pillLightText) !important;
 }
 
-.test {
-    color: #ffffff ;
-}

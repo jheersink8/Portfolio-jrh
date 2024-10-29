@@ -1,3 +1,5 @@
+import '../css/themeStyle.css';
+
 function Mute({ color }) {
 
     return (
@@ -41,11 +43,11 @@ function Unmute({ color }) {
     );
 };
 
-function LightMode() {
+function LightMode({ color }) {
 
     return (
         <svg
-            fill="#000000"
+            fill={color}
             width="30"
             height="30"
             viewBox="-1 2.5 26 26"
@@ -58,10 +60,10 @@ function LightMode() {
     )
 };
 
-function DarkMode() {
+function DarkMode({ color }) {
     return (
         <svg
-            fill="#ffffff"
+            fill={color}
             width="30"
             height="30"
             viewBox="0 0 35 35"
@@ -75,4 +77,24 @@ function DarkMode() {
     )
 };
 
-export { Mute, Unmute, LightMode, DarkMode };
+function Hamburger({ color }) {
+    {
+        return (
+            <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    fill={color}
+                    d="M4 7h22M4 15h22M4 23h22"
+                    stroke={color}
+                    strokeWidth="2"
+                />
+            </svg>
+        );
+    }
+}
+
+export { Mute, Unmute, LightMode, DarkMode, Hamburger };

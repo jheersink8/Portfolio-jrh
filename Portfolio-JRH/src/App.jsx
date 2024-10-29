@@ -1,6 +1,5 @@
 import '../src/assets/css/App.css';
 import '../src/assets/css/themeStyle.css';
-import '../src/bootstrap/custom.scss';
 
 import Nav from './components/Nav/Nav'
 import Welcome from './components/Portfolio/Welcome'
