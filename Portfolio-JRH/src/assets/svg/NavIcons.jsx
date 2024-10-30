@@ -1,12 +1,16 @@
 import '../css/themeStyle.css';
+const svgW = 27;
+const svgH = 27;
 
 function Mute({ color }) {
+
+
 
     return (
         <svg
             fill={color}
-            width="35"
-            height="35"
+            width={svgW}
+            height={svgH}
             viewBox="-4 0 32 32"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg">
@@ -32,8 +36,8 @@ function Unmute({ color }) {
     return (
         <svg
             fill={color}
-            width="35"
-            height="35"
+            width={svgW}
+            height={svgH}
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg">
 
@@ -48,8 +52,8 @@ function LightMode({ color }) {
     return (
         <svg
             fill={color}
-            width="30"
-            height="30"
+            width={svgW}
+            height={svgH}
             viewBox="-1 2.5 26 26"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg">
@@ -64,8 +68,8 @@ function DarkMode({ color }) {
     return (
         <svg
             fill={color}
-            width="30"
-            height="30"
+            width={svgW}
+            height={svgH}
             viewBox="0 0 35 35"
             xmlns="http://www.w3.org/2000/svg">
 

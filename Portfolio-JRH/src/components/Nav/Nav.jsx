@@ -12,6 +12,7 @@ export default function Nav() {
 
     const navTheme = darkTheme ? 'darkNav' : 'lightNav';
     const pillTheme = darkTheme ? 'darkPill' : 'lightPill';
+    const emphasisTheme = darkTheme ? 'darkEmphasis' : 'lightEmphasis';
     const btnTheme = darkTheme
         ? rootStyles.getPropertyValue('--defaultDarkText').trim()
         : rootStyles.getPropertyValue('--defaultLightText').trim();
@@ -34,7 +35,7 @@ export default function Nav() {
     ]
     const navItems = navLinks.map(navLink =>
         <li key={navLink.id} className={`nav-item mx-4 px-3 d-flex align-items-center`}>
-            <a className={`active ${pillTheme} nav-link text-center`} href={navLink.id}>{navLink.name}</a>
+            <a className={`active ${pillTheme} nav-link text-center px-4 fw-semibold`} href={navLink.id}>{navLink.name}</a>
         </li>
     );
 
@@ -42,7 +43,7 @@ export default function Nav() {
         <nav className={`navbar fixed-top mb-5 px-5 navbar-expand-lg ${navTheme}`}>
 
             {/* Page Name (i.e. My Name) */}
-            <a className={`navbar-brand ${navTheme} mx-0`} href="/">Jordan Heersink Portfolio</a>
+            <a className={`navbar-brand ${navTheme} mx-0 fw-semibold`} href="/"><span className={emphasisTheme}>Jordan Heersink </span>Portfolio</a>
 
             {/* Hamburger Menu */}
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,15 +52,17 @@ export default function Nav() {
 
             {/* Link Buttons */}
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav m-auto mb-2 mb-lg-0 nav-pills">
+                <ul className="navbar-nav m-auto mb-2 mb-lg-0 nav-pills ">
                     {navItems}
                 </ul>
 
+
                 {/* Theme and Audio Buttons */}
-                <div className='d-flex mx-5'>
+                <hr class="d-lg-none my-2 text-white-100"></hr>
+                <div className='d-flex mx-5 justify-content-center'>
 
                     {/* Light Mode/ Dark Mode button */}
-                    <button onClick={toggleTheme} style={btnDefault} className='icon-button mx-3'>
+                    <button onClick={toggleTheme} style={btnDefault} className='icon-button mx-3 '>
                         {darkTheme ? <DarkMode color={btnTheme} /> : <LightMode color={btnTheme} />}
                     </button>
 

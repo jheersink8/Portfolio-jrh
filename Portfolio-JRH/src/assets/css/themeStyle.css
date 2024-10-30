@@ -5,12 +5,14 @@
     --defaultDarkText: #ffffff;
     --pillDarkBackground: #ffffff;
     --pillDarkText: #000000;
+    --emphasisDark: #ffc400;
 
     /* Light Mode */
     --defaultLightBackground: #ffffff;
     --defaultLightText: #000000;
     --pillLightBackground: #000000;
     --pillLightText: #ffffff;
+    --emphasisLight: #201df8;
 }
 
 /* Main Background */
@@ -31,6 +33,15 @@
 .lightNav {
     background-color: var(--defaultLightBackground);
     color: var(--defaultLightText) !important;
+}
+
+/* Special Text */
+.darkEmphasis {
+    color: var(--emphasisDark) !important;
+}
+
+.lightEmphasis {
+    color: var(--emphasisLight) !important;
 }
 
 /* Pills */
