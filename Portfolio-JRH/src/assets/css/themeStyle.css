@@ -35,13 +35,8 @@
     color: var(--defaultLightText) !important;
 }
 
-/* Special Text */
-.darkEmphasis {
-    color: var(--emphasisDark) !important;
-}
-
-.lightEmphasis {
-    color: var(--emphasisLight) !important;
+.test {
+    border-bottom: 1px solid var(--emphasisDark);
 }
 
 /* Pills */
@@ -63,3 +58,30 @@
     color: var(--pillLightText) !important;
 }
 
+
+
+/* GENERAL */
+/* General Text */
+.darkText {
+    color: var(--defaultDarkText) !important;
+}
+
+.lightText {
+    color: var(--defaultLightText) !important;
+}
+
+/* Special Text */
+.darkEmphasisText {
+    color: var(--emphasisDark) !important;
+}
+
+.lightEmphasisText {
+    color: var(--emphasisLight) !important;
+}
+
+.darkBorder {
+    border-bottom: 2px solid var(--emphasisDark);
+}
+.lightBorder {
+    border-bottom: 2px solid var(--emphasisLight);
+}

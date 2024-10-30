@@ -1,5 +1,6 @@
 import '../src/assets/css/App.css';
 import '../src/assets/css/themeStyle.css';
+import '../src/assets/css/style.css';
 
 import Nav from './components/Nav/Nav'
 import Welcome from './components/Portfolio/Welcome'
@@ -25,7 +26,7 @@ function App() {
     <div className={ masterBackground }>
       <ThemeContext.Provider value={{ darkTheme, toggleTheme }} >
         <Nav />
-        <div className='p-4'></div>
+  
         <Welcome />
         <AboutMe />
         <Projects />
