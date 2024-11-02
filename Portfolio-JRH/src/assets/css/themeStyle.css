@@ -1,4 +1,13 @@
 /* THEME CHANGES */
+/* Main Background */
+.darkGradientBackground {
+    background: linear-gradient(158deg, rgba(2, 0, 36, 1) 0%, rgba(21, 93, 159, 1) 50%, rgba(12, 125, 148, 1) 100%);
+}
+
+.lightGradientBackground {
+    background: linear-gradient(320deg, rgba(179, 177, 0, 1) 0%, rgba(61, 186, 230, 1) 29%, rgba(143, 236, 255, 1) 67%);
+}
+
 :root {
     /* Dark Mode */
     --defaultDarkBackground: #000000;
@@ -13,15 +22,6 @@
     --pillLightBackground: #000000;
     --pillLightText: #ffffff;
     --emphasisLight: #201df8;
-}
-
-/* Main Background */
-.darkGradientBackground {
-    background: linear-gradient(158deg, rgba(2, 0, 36, 1) 0%, rgba(21, 93, 159, 1) 50%, rgba(12, 125, 148, 1) 100%);
-}
-
-.lightGradientBackground {
-    background: linear-gradient(320deg, rgba(179, 177, 0, 1) 0%, rgba(61, 186, 230, 1) 29%, rgba(143, 236, 255, 1) 67%);
 }
 
 /* NAV */

@@ -23,10 +23,9 @@ function App() {
   const masterBackground = darkTheme ? 'darkGradientBackground' : 'lightGradientBackground';
 
   return (
-    <div className={ masterBackground }>
+    <div className={masterBackground}>
       <ThemeContext.Provider value={{ darkTheme, toggleTheme }} >
         <Nav />
-  
         <Welcome />
         <AboutMe />
         <Projects />

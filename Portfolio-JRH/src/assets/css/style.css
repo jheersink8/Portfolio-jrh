@@ -1,3 +1,11 @@
-.space {
-    padding-top: 235px;
+@media (min-width: 992px) {
+    .space-large {
+        padding-top: 235px;
+    }
+}
+
+@media (max-width: 991px) {
+    .space-small {
+        padding-top: 65px;
+    }
 }
