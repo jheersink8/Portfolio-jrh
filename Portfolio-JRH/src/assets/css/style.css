@@ -1,11 +1,12 @@
 @media (min-width: 992px) {
     .space-large {
-        padding-top: 235px;
+        padding-top: 16rem;
     }
 }
 
 @media (max-width: 991px) {
     .space-small {
-        padding-top: 65px;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
 }

@@ -15,10 +15,10 @@ export default function Welcome() {
 
             <div style={{ backgroundColor: 'transparent' }}>
                 <div className='container'>
-                    <div className='row align-items-center d-flex '>
+                    <div className='row'>
 
                         {/* Blurb */}
-                        <h1 className={`col-lg-6 p-3 py-5 ${textColor}`} >
+                        <h1 className={`col-lg-6 pb-5 px-4 ${textColor}`} >
                             Hello. My name is
                             <span className={textEmphasisTheme}> Jordan Heersink</span>.
                             Thank you so much for visiting my site! Please
@@ -29,13 +29,16 @@ export default function Welcome() {
                         </h1>
 
                         {/* Headshot */}
-                        <img className='col-lg-6 p-0'
-                            src='\src\assets\images\lightHeadshot.jpg'
-                            width='100%'
+                        <div className='col-lg-6 p-0' >
+                            <img className='img-fluid mx-auto d-block '
+                                src='\src\assets\images\lightHeadshot.jpg'
+                                alt='Jordan Heersink Headshot'
+                           width='90%'
 
-                            style={{ boxShadow: '10px 10px 150px 10px #5c7070' }}
+                                style={{ boxShadow: '10px 10px 150px 10px #5c7070' }}
 
-                        ></img>
+                            ></img>
+                        </div>
                     </div>
                 </div>
             </div>
