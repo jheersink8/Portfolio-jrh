@@ -7,12 +7,12 @@ export default function Skills() {
         </li>)
 
     return (
-        <>
+        <div className="d-none">
             {/* Skills */}
             <h3>My Web Development Toolbelt</h3>
             <ul>
                 {listItems}
             </ul>
-        </>
+        </div >
     );
 };

@@ -1,4 +1,9 @@
 import timeline from '../../../assets/JSON/timeline.js';
+import '../../../assets/css/timeLine.css';
+import TimelineLayout from './TimelineComponents/TimelineLayout.jsx'
+
+
+
 
 export default function Timeline() {
 
@@ -9,12 +14,23 @@ export default function Timeline() {
     );
 
     return (
-        <>
+        <div>
             {/* Timeline */}
             <h3>My Timeline</h3>
-            <ul>
-                {listItems}
-            </ul>
-        </>
+            <br></br>
+            <br></br>
+
+
+
+            <div className="container experience">
+                <div className="row">
+                    <div className="col-md-12">
+                    </div>
+
+                    <TimelineLayout />
+                </div>
+            </div>
+
+        </div >
     );
 };

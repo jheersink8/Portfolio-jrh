@@ -12,6 +12,7 @@ export default function Projects() {
 
     return (
         <>
+                        <div className='space-large space-small'></div>
             {/* Projects */}
             <div id="projects">
                 <h2>Web Development Projects</h2>

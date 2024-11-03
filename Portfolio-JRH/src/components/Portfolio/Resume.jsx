@@ -1,6 +1,7 @@
 export default function Resume() {
     return (
         <>
+                        <div className='space-large space-small'></div>
             {/* Resume */}
             <div id="resume">
                 <h2>Web Development Resume</h2>
