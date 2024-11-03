@@ -1,7 +1,7 @@
 /* THEME CHANGES */
 /* Main Background */
 .darkGradientBackground {
-    background: linear-gradient(158deg, rgba(2, 0, 36, 1) 0%, rgba(21, 93, 159, 1) 50%, rgba(12, 125, 148, 1) 100%);
+    background: linear-gradient(158deg, rgb(4, 1, 51) 0%, rgb(33, 107, 175) 50%, rgba(12, 125, 148, 1) 100%);
 }
 
 .lightGradientBackground {
@@ -18,18 +18,18 @@
     --pillDarkBackground: #ffffff;
     --pillDarkText: #000000;
     /* About Me Background */
-    --darkComponentBackground: #1c3149;
+    --darkComponentBackground: #06172b;
 
     /* LIGHT MODE */
     /* Texts */
     --defaultLightText: #000000;
-    --emphasisLight: #201df8;
+    --emphasisLight: #15ac3a;
     /* Nav Background and Pills */
     --defaultLightBackground: #ffffff;
     --pillLightBackground: #000000;
     --pillLightText: #ffffff;
     /* About Me Background */
-    --lightComponentBackground: #f0f0f0;
+    --lightComponentBackground: #d6d6b8;
 }
 
 /* NAV */
@@ -106,3 +106,22 @@
     background-color: var(--lightComponentBackground);
     color: var(--defaultLightText);
 }
+
+/* ABOUT ME SECTION*/
+/* Buttons */
+.darkAboutButton {
+    background-color: var(--darkComponentBackground);
+    border: none;
+    border-top: 2px  ;
+    border-right: 2px  ;
+    border-left: 2px  ;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+   }
+
+.darkAboutButton:hover {
+    background-color: var(--pillDarkBackground);
+    color: var(--pillDarkText);
+}
+
+.lightAboutButton {}

@@ -7,7 +7,7 @@ export default function Skills() {
         </li>)
 
     return (
-        <div className="d-none">
+        <div>
             {/* Skills */}
             <h3>My Web Development Toolbelt</h3>
             <ul>

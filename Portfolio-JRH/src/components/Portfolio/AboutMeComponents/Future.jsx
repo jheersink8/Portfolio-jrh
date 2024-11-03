@@ -20,7 +20,7 @@ const toolItems = tools.map(tool =>
 
 export default function Future() {
     return (
-        <div className="d-none">
+        <div>
             {/* Future Development */}
             <h3>What I'm Learning Next</h3>
 

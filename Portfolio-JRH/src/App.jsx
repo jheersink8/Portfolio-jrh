@@ -24,6 +24,8 @@ function App() {
 
   return (
     <div className={masterBackground}>
+      <br></br>
+      <br></br>
       <ThemeContext.Provider value={{ darkTheme, toggleTheme }} >
         <Nav />
         <Welcome />

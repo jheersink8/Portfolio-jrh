@@ -10,3 +10,9 @@
         padding-bottom: 4rem;
     }
 }
+
+
+
+.darkAboutButton, .lightAboutButton {
+    font-size: 1.4rem;
+}
