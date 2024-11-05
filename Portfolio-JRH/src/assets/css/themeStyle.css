@@ -110,18 +110,27 @@
 /* ABOUT ME SECTION*/
 /* Buttons */
 .darkAboutButton {
-    background-color: var(--darkComponentBackground);
-    border: none;
-    border-top: 2px  ;
-    border-right: 2px  ;
-    border-left: 2px  ;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    
    }
 
-.darkAboutButton:hover {
+.lightAboutButton {
+
+}
+
+.darkAboutButton.inactive:hover {
     background-color: var(--pillDarkBackground);
     color: var(--pillDarkText);
 }
 
-.lightAboutButton {}
+
+.lightAboutButton.inactive:hover {
+    background-color: var(--pillLightBackground);
+    color: var(--pillLightText);
+}
+
+.darkAboutButton.active {
+    background-color: var(--darkComponentBackground)
+}
+.lightAboutButton.active {
+    background-color: var(--lightComponentBackground)
+}

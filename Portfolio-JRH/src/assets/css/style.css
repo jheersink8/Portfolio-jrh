@@ -1,6 +1,8 @@
+/* GENERAL */
+/* Section Spacers */
 @media (min-width: 992px) {
     .space-large {
-        padding-top: 16rem;
+        padding-top: 20rem;
     }
 }
 
@@ -11,8 +13,16 @@
     }
 }
 
-
-
+/* ABOUT ME */
+/* About Me Button Design */
 .darkAboutButton, .lightAboutButton {
     font-size: 1.4rem;
+    border-top: 2px  ;
+    border-right: 2px  ;
+    border-left: 2px  ;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: transparent;
+    border: none;
 }
+

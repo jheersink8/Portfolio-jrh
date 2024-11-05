@@ -7,8 +7,6 @@ import Future from './AboutMeComponents/Future'
 import { ThemeContext } from '../../App';
 import React, { useContext, useState } from 'react';
 
-
-
 export default function AboutMe() {
     // Theme Styles //
     const { darkTheme } = useContext(ThemeContext);
@@ -30,15 +28,17 @@ export default function AboutMe() {
         setAboutContent(id);
     };
 
-    const switchButtons = buttonContent.map(button =>
-        <button onClick={() => runSwitchAbout(button.id)} key={button.id} className={`px-3 py-1 mx-2 ${aboutButtonTheme}`}>{button.name}</button>)
+    const switchButtons = buttonContent.map(button => {
+        const buttonStatus = button.id === aboutContent ? 'active' : 'inactive';
+        return (
+            <button onClick={() => runSwitchAbout(button.id)} key={button.id} className={`px-3 py-1 mx-2 ${aboutButtonTheme} ${buttonStatus}`}>{button.name}</button>)
+    });
 
     return (
         <>
             {/* About Me */}
             <div className='container ' id="about-me">
                 <div className='space-large space-small'></div>
-
 
                 <div className='row mb-3'>
                     <h2 className={textColor}>About Me!</h2>
