@@ -13,16 +13,61 @@
     }
 }
 
+/* WELCOME */
+/* Img shadow */
+.shadowMe {
+    box-shadow: 10px 10px 150px 10px #5c7070;
+}
+
 /* ABOUT ME */
 /* About Me Button Design */
-.darkAboutButton, .lightAboutButton {
+.darkAboutButton,
+.lightAboutButton {
     font-size: 1.4rem;
-    border-top: 2px  ;
-    border-right: 2px  ;
-    border-left: 2px  ;
+    border-top: 2px;
+    border-right: 2px;
+    border-left: 2px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     background-color: transparent;
     border: none;
 }
 
+.darkAboutButton.active,
+.lightAboutButton.active {
+    position: relative;
+}
+
+.darkAboutButton.active::before,
+.lightAboutButton.active::before,
+.darkAboutButton.active::after,
+.lightAboutButton.active::after {
+    --border-radius: 1rem;
+    content: '';
+    position: absolute;
+    width: var(--border-radius);
+    height: var(--border-radius);
+    bottom: 0;
+}
+
+.darkAboutButton.active::before,
+.lightAboutButton.active::before {
+    left: calc(var(--border-radius) * -1);
+    border-radius: 0 0 100vw 0;
+}
+
+.darkAboutButton.active::after,
+.lightAboutButton.active::after {
+    right: calc(var(--border-radius) * -1);
+    border-radius: 0 0 0 100vw;
+}
+
+.darkComponentBackground,
+.lightComponentBackground {
+    border-radius: 12px;
+}
+
+/* Shadow Box */
+.shadowAbout {
+    box-shadow: 20px 20px 100px 5px #5c7070;
+}

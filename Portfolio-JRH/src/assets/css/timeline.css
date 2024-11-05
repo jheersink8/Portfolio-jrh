@@ -1,0 +1,38 @@
+.timelineTitleStyle {
+    font-family: "DM Serif Display", serif;
+    font-weight: 100;
+    font-size: 3.3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.timelineEventStyle {
+    font-family: "DM Serif Display", serif;
+    font-weight: 100;
+    font-size: 2.4rem;
+    font-style: italic;
+    margin-top: 2rem;
+}
+
+.timelineYearButtonStyle {
+    background-color: transparent;
+    border-radius: 9px;
+    padding: 10px 22px 10px 22px;
+    font-size: 1.2rem;
+    font-family: "DM Serif Display", serif;
+}
+
+
+
+
+
+
+
+/* THEME TRANSFER */
+.timelineYearButtonStyle {
+    border: 1px solid #ffffff;    
+}
+
+.timelineEventStyle {
+    color: #ffffff;
+}

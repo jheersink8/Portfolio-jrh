@@ -31,7 +31,7 @@ export default function AboutMe() {
     const switchButtons = buttonContent.map(button => {
         const buttonStatus = button.id === aboutContent ? 'active' : 'inactive';
         return (
-            <button onClick={() => runSwitchAbout(button.id)} key={button.id} className={`px-3 py-1 mx-2 ${aboutButtonTheme} ${buttonStatus}`}>{button.name}</button>)
+            <button onClick={() => runSwitchAbout(button.id)} key={button.id} className={`px-3 py-1 mx-3 switchButton ${aboutButtonTheme} ${buttonStatus}`}>{button.name}</button>)
     });
 
     return (
@@ -42,22 +42,22 @@ export default function AboutMe() {
 
                 <div className='row mb-3'>
                     <h2 className={textColor}>About Me!</h2>
-                </div>
-
-                <div className='row'>
-                    <div>
-                        {switchButtons}
+                </div>     
+                    <div className='row'>
+                        <div className='switchButton'>
+                            {switchButtons}
+                        </div>
                     </div>
-                </div>
-
-                <div className='row '>
-                    <div className='container'>
-                        <div className='row'>
-                            <div className={`col p-5 ${componentBackground}`} style={{ height: '700px' }}>
-                                {aboutContent === 'bio' && <Bio />}
-                                {aboutContent === 'timeline' && <TimelineLayout />}
-                                {aboutContent === 'skills' && <Skills />}
-                                {aboutContent === 'future' && <Future />}
+                <div className='shadowAbout'>
+                    <div className='row '>
+                        <div className='container '>
+                            <div className='row '>
+                                <div className={`col p-5 ${componentBackground}`} style={{ height: '650px' }}>
+                                    {aboutContent === 'bio' && <Bio />}
+                                    {aboutContent === 'timeline' && <TimelineLayout />}
+                                    {aboutContent === 'skills' && <Skills />}
+                                    {aboutContent === 'future' && <Future />}
+                                </div>
                             </div>
                         </div>
                     </div>

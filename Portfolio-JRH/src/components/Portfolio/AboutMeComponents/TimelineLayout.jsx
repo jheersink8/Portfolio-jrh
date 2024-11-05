@@ -21,24 +21,26 @@ export default function TimelineLayout() {
                 <TimelineDot />
                 <TimelineConnector style={{ display: `${time.lineValue}` }} />
             </TimelineSeparator>
-            <TimelineContent><button onClick={() => runYearSwitch(time.id)}>{time.year}</button></TimelineContent>
+            <TimelineContent><button className='timelineYearButtonStyle' onClick={() => runYearSwitch(time.id)}>{time.year}</button></TimelineContent>
         </TimelineItem>
     );
 
     return (
         <div>
-            <h3 style={{ textAlign: 'center' }}>My Timeline</h3>
+         
             {/* Timeline */}
             <div>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col-3 border'>
+                        <div className='col-3'>
                             <Timeline position="left">
                                 {listItems}
                             </Timeline>
                         </div>
-                        <div className='col-9 border d-flex align-items-center justify-content-center' >
-                            <h4 >{timeline[index].event}</h4>
+                        <div className='col-9 ' >
+                            <h4 className='timelineTitleStyle'>{timeline[index].year} | {timeline[index].category} Event</h4>
+                            <hr />
+                            <p className='timelineEventStyle'>{timeline[index].event}</p>
                         </div>
                     </div>
                 </div>

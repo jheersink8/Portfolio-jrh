@@ -1,6 +1,7 @@
 import '../src/assets/css/App.css';
 import '../src/assets/css/themeStyle.css';
 import '../src/assets/css/style.css';
+import '../src/assets/css/animationStyle.css';
 
 import Nav from './components/Nav/Nav'
 import Welcome from './components/Portfolio/Welcome'

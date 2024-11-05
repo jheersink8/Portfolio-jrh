@@ -30,12 +30,12 @@ export default function Welcome() {
 
                         {/* Headshot */}
                         <div className='col-lg-6 p-0' >
-                            <img className='img-fluid mx-auto d-block '
+                            <img className='img-fluid mx-auto d-block shadowMe'
                                 src='\src\assets\images\lightHeadshot.jpg'
                                 alt='Jordan Heersink Headshot'
-                           width='90%'
+                                width='90%'
 
-                                style={{ boxShadow: '10px 10px 150px 10px #5c7070' }}
+
 
                             ></img>
                         </div>
