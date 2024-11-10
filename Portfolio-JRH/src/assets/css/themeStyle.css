@@ -113,25 +113,65 @@
     background-color: var(--pillDarkBackground);
     color: var(--pillDarkText);
 }
+
 .lightAboutButton.inactive:hover {
     background-color: var(--pillLightBackground);
     color: var(--pillLightText);
 }
+
 .darkAboutButton.active {
     background-color: var(--darkComponentBackground)
 }
+
 .lightAboutButton.active {
     background-color: var(--lightComponentBackground)
 }
+
 .darkAboutButton.active::before {
     box-shadow: 5px 5px 0 5px var(--darkComponentBackground);
 }
+
 .lightAboutButton.active::before {
     box-shadow: 5px 5px 0 5px var(--lightComponentBackground);
 }
+
 .darkAboutButton.active::after {
     box-shadow: -5px 5px 0 5px var(--darkComponentBackground);
 }
+
 .lightAboutButton.active::after {
     box-shadow: -5px 5px 0 5px var(--lightComponentBackground);
 }
+
+
+/* About Me - Timeline */
+.darkTimelineYearButton.timelineYearButtonStyle {
+    color: var(--defaultDarkText);
+    border: 1px solid var(--pillDarkBackground);
+}
+
+.lightTimelineYearButton.timelineYearButtonStyle {
+    color: var(--defaultLightText);
+    border: 1px solid var(--pillLightBackground);
+}
+
+.darkTimelineYearButton.timelineYearButtonStyle:hover {
+    background-color: var(--pillDarkBackground);
+    color: var(--pillDarkText);
+}
+
+.lightTimelineYearButton.timelineYearButtonStyle:hover {
+    background-color: var(--pillLightBackground);
+    color: var(--pillLightText);
+}
+
+
+.darkTimelineYearButton.timelineYearButtonStyle.active {
+    background-color: var(--pillDarkBackground);
+    color: var(--pillDarkText);
+} 
+
+.lightTimelineYearButton.timelineYearButtonStyle.active {
+    background-color: var(--pillLightBackground);
+    color: var(--pillLightText);
+} 

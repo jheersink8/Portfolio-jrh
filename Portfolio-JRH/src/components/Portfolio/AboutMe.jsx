@@ -28,10 +28,20 @@ export default function AboutMe() {
         setAboutContent(id);
     };
 
+    // Button tabs for about me section. Includes status switching for active/inactive buttons.//
     const switchButtons = buttonContent.map(button => {
         const buttonStatus = button.id === aboutContent ? 'active' : 'inactive';
         return (
-            <button onClick={() => runSwitchAbout(button.id)} key={button.id} className={`px-3 py-1 mx-3 switchButton ${aboutButtonTheme} ${buttonStatus}`}>{button.name}</button>)
+            <button
+                onClick={() => runSwitchAbout(button.id)}
+                key={button.id}
+                className={
+                    `px-3 py-1 mx-3 switchButton 
+                        ${aboutButtonTheme} 
+                        ${buttonStatus}`
+                }>
+                {button.name}</button>
+        )
     });
 
     return (
@@ -42,12 +52,12 @@ export default function AboutMe() {
 
                 <div className='row mb-3'>
                     <h2 className={textColor}>About Me!</h2>
-                </div>     
-                    <div className='row'>
-                        <div className='switchButton'>
-                            {switchButtons}
-                        </div>
+                </div>
+                <div className='row'>
+                    <div>
+                        {switchButtons}
                     </div>
+                </div>
                 <div className='shadowAbout'>
                     <div className='row '>
                         <div className='container '>
