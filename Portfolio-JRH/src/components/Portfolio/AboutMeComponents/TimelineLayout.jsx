@@ -65,6 +65,10 @@ export default function TimelineLayout() {
                             <h4 className='timelineTitleStyle'>{timeline[index].year} | {timeline[index].category} Event</h4>
                             <hr />
                             <p className='timelineEventStyle'>{timeline[index].event}</p>
+                            <img 
+                            src={`/src/assets/images/${timeline[index].picture}.jpg`}
+                            width='50%'
+                            ></img>
                         </div>
                     </div>
                 </div>

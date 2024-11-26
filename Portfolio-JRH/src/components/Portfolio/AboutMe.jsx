@@ -62,7 +62,7 @@ export default function AboutMe() {
                     <div className='row '>
                         <div className='container '>
                             <div className='row '>
-                                <div className={`col p-5 ${componentBackground}`} style={{ height: '650px' }}>
+                                <div className={`col p-5 ${componentBackground}`} style={{ height: '680px' }}>
                                     {aboutContent === 'bio' && <Bio />}
                                     {aboutContent === 'timeline' && <TimelineLayout />}
                                     {aboutContent === 'skills' && <Skills />}
