@@ -43,7 +43,7 @@ const timeline = [
     {
         id: 5,
         year: 2018,
-        event: 'Bought a House',
+        event: 'My wife and I bought a House',
         picture: 'house',
         category: 'Personal',
         lineValue: "null",

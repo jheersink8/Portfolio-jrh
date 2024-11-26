@@ -51,24 +51,33 @@ export default function TimelineLayout() {
 
     return (
         <div>
-
             {/* Timeline */}
             <div>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col-3'>
+                        <div className='col-2'>
                             <Timeline position="left">
                                 {listItems}
                             </Timeline>
                         </div>
-                        <div className='col-9 ' >
+                        <div className='col-10' >
                             <h4 className='timelineTitleStyle'>{timeline[index].year} | {timeline[index].category} Event</h4>
                             <hr />
-                            <p className='timelineEventStyle'>{timeline[index].event}</p>
-                            <img 
-                            src={`/src/assets/images/${timeline[index].picture}.jpg`}
-                            width='50%'
-                            ></img>
+                            <div className='container d-flex' style={{ height: '70%' }}>
+                                <div className='row mt-5'>
+                                    {/* Timeline Description */}
+                                    <p
+                                        className='col-5 timelineEventStyle align-content-center'>
+                                        {timeline[index].event}
+                                    </p>
+                                    {/* Timeline Picture */}
+                                    <img
+                                        className='col-7 p-3'
+                                        src={`/src/assets/images/${timeline[index].picture}.jpg`}
+                                    ></img>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

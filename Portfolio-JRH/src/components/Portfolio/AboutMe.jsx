@@ -22,7 +22,7 @@ export default function AboutMe() {
         { id: 'future', name: 'Future Plans' }
     ];
 
-    const [aboutContent, setAboutContent] = useState('bio');
+    const [aboutContent, setAboutContent] = useState('timeline');
 
     function runSwitchAbout(id) {
         setAboutContent(id);
@@ -61,7 +61,7 @@ export default function AboutMe() {
                 <div className='shadowAbout'>
                     <div className='row '>
                         <div className='container '>
-                            <div className='row '>
+                            <div className='row'>
                                 <div className={`col p-5 ${componentBackground}`} style={{ height: '680px' }}>
                                     {aboutContent === 'bio' && <Bio />}
                                     {aboutContent === 'timeline' && <TimelineLayout />}
