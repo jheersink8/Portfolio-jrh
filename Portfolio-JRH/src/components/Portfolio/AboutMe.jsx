@@ -22,7 +22,7 @@ export default function AboutMe() {
         { id: 'future', name: 'Future Plans' }
     ];
 
-    const [aboutContent, setAboutContent] = useState('timeline');
+    const [aboutContent, setAboutContent] = useState('skills');
 
     function runSwitchAbout(id) {
         setAboutContent(id);

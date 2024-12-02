@@ -1,5 +1,6 @@
 import skills from '../../../assets/JSON/skills';
 
+
 export default function Skills() {
     const listItems = skills.map(skill =>
         <li key={skill.id}>
@@ -12,6 +13,7 @@ export default function Skills() {
             <h3>My Web Development Toolbelt</h3>
             <ul>
                 {listItems}
+
             </ul>
         </div >
     );
