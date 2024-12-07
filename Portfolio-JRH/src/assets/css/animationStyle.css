@@ -1,1 +1,18 @@
-/* ABOUT ME */
+/* ABOUT ME - What I know */
+.flipPerspective {
+    perspective: 1000px;
+}
+
+.flip, .unflip {
+    transition: transform 0.7s ease-out;
+}
+
+.flip {
+    transform: rotateY(-180deg);
+}
+
+.unflip {
+    transform: rotateY(0deg);
+}
+
+

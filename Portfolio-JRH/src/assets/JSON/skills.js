@@ -2,82 +2,82 @@ const skills = [
     {
         id: 1,
         mastery: 'GitHub',
-        svg: 'placeholder'
+        svg: 'GithubSVG'
     },
     {
         id: 2,
         mastery: 'HTML',
-        svg: 'placeholder'
+        svg: 'HtmlSVG'
     },
     {
         id: 3,
         mastery: 'CSS',
-        svg: 'placeholder'
+        svg: 'CssSVG'
     },
     {
         id: 4,
         mastery: 'JavaScript',
-        svg: 'placeholder'
+        svg: 'JavascriptSVG'
     },
     {
         id: 5,
         mastery: 'Bootstrap',
-        svg: 'placeholder'
+        svg: 'BootstrapSVG'
     },
     {
         id: 6,
         mastery: 'jQuery',
-        svg: 'placeholder'
+        svg: 'JquerySVG'
     },
     {
         id: 7,
         mastery: 'Node.js',
-        svg: 'placeholder'
+        svg: 'NodeSVG'
     },
     {
         id: 8,
         mastery: 'Web Services APIs',
-        svg: 'placeholder'
+        svg: 'ApiSVG'
     },
     {
         id: 9,
         mastery: 'NPM Packages',
-        svg: 'placeholder'
+        svg: 'NpmSVG'
     },
     {
         id: 10,
         mastery: 'PostgreSQL',
-        svg: 'placeholder'
+        svg: 'PostgresqlSVG'
     },
     {
         id: 11,
         mastery: 'MongoDB',
-        svg: 'placeholder'
+        svg: 'MongodbSVG'
     },
     {
         id: 12,
         mastery: 'React',
-        svg: 'placeholder'
+        svg: 'ReactSVG'
     },
     {
         id: 13,
         mastery: 'Express',
-        svg: 'placeholder'
+        svg: 'ExpressSVG'
     },
     {
         id: 14,
         mastery: 'SQL',
-        svg: 'placeholder'
+        svg: 'SqlSVG'
     },
     {
         id: 15,
         mastery: 'Heroku',
-        svg: 'placeholder'
+        svg: 'HerokuSVG'
     },
     {
         id: 16,
         mastery: 'GraphQL',
-        svg: 'placeholder'
+        svg: 'GraphqlSVG'
     }
 ];
 

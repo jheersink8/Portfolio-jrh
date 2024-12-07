@@ -175,3 +175,14 @@
     background-color: var(--pillLightBackground);
     color: var(--pillLightText);
 } 
+
+
+/* About Me - What I Know */
+.svgSkillIconDark {
+    fill: var(--defaultDarkText);
+    background-color: var(--emphasisDark);}
+
+.svgSkillIconLight {
+    fill: var(--defaultLightText);
+    background-color: var(--emphasisLight);
+}
