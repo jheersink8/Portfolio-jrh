@@ -82,11 +82,12 @@
 
 .front {
     backface-visibility: hidden;
+    transform: translateZ(40px);
 }
 
 .back {
     padding: 10px;
-    transform: rotateY(-180deg);
+    transform: rotateY(-180deg) translateZ(40px);
     position: absolute;
     backface-visibility: hidden;
     text-align: center;
