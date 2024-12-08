@@ -6,6 +6,7 @@
         padding-top: 13rem;
     }
 }
+
 /* Header spacer - mobile */
 @media (max-width: 991px) {
     .header-space-small {
@@ -13,6 +14,7 @@
         padding-bottom: 4rem;
     }
 }
+
 /* Top spacer standard - monitor */
 @media (min-width: 992px) {
     .top-space-large {
@@ -140,74 +142,86 @@
 }
 
 
-
-
-
-
-
-
-
-
+/* ABOUT ME - Future Plans */
 /* Triangle  */
-.Object{
-    perspective: 2000px;
-    height: 100%;
-    /* transform: rotateY(40deg) rotateX(20deg) rotateZ(60deg); */
-    transform-style: preserve-3d;
-}
+
 
 .triangle {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform-style: preserve-3d;
     height: 550px;
     width: 450px;
-
-
-    transition: transform 1.2s ease-out;
 }
 
 
-.languages, .frameworks, .tools {
-    height: 500px;
-    width: 400px;
-    position: absolute;
-    backface-visibility: hidden;
+
+.triangleTitle {
+    text-align: center;
+    font-size: 2.2rem;
 }
+
+.triangleList {
+    list-style-type: none;
+    padding: 30px;
+    font-size: 1.6rem;
+}
+
+
+.triangleButtonLeft,
+.triangleButtonRight {
+    font-weight: 500;
+    box-shadow: 10px 10px 150px 10px #5c7070;
+    border: none;
+    background-color: transparent;
+    font-size: 1.4rem;}
 
 .triangleButtonLeft {
-    writing-mode:sideways-lr;
+    writing-mode: sideways-lr;
 }
 
 .triangleButtonRight {
-    writing-mode:sideways-rl;
+    writing-mode: sideways-rl;
 }
 
-/* .languages{
-    background-color: pink;
+.triangleFront {
+    border: 3px solid white;
+    border-radius: 19px;
+    background-image: linear-gradient(rgba(92, 112, 112, .9), rgba(92, 112, 112, .1));
 }
 
-.frameworks{
-    background-color: green;  
+.triangleSide {
+    filter: blur(12px);
+    border: 3px solid rgb(79, 80, 139);
+    border-radius: 19px;
+    background-image: linear-gradient(rgba(92, 112, 112, .9), rgba(92, 112, 112, .1));
 }
 
-.tools{
-    background-color: red;   
-} */
-
-:root{
-    --axisDistance: 150px;
+.position1,
+.position2,
+.position3 {
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* backface-visibility: hidden; */
 }
 
-.position1{
+:root {
+    --axisDistance: 140px;
+}
+
+.position1 {
     transform: rotateY(0deg) translateZ(var(--axisDistance));
 }
 
-.position2{
+.position2 {
     transform: rotateY(240deg) translateZ(var(--axisDistance));
 }
 
-.position3{
+.position3 {
     transform: rotateY(120deg) translateZ(var(--axisDistance));
 }

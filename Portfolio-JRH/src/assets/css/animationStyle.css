@@ -16,3 +16,43 @@
 }
 
 
+
+
+/* ABOUT ME - Future Plans */
+
+.Object {
+    perspective: 2000px;
+    transform-style: preserve-3d;
+    /* transform: rotateY(40deg) rotateX(20deg) rotateZ(60deg); */
+}
+
+.triangle {
+    transform-style: preserve-3d;
+    transition: transform 1.2s ease-out;
+}
+
+.side {
+    transition: border 1.5s ease-out, filter .8s ease-out;
+}
+
+.position1, .position2, .position3 {
+    animation: expandAndContract 2s ease-in-out;
+}
+
+@keyframes expandAndContract {
+    0% {
+        --axisDistance: 150px;
+    }
+    25% {
+        --axisDistance: 300px;
+    }
+    50% {
+        --axisDistance: 300px;
+    }
+    75% {
+        --axisDistance: 150px;
+    }
+    100% {
+        --axisDistance: 150px;
+    }
+}

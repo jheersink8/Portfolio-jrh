@@ -55,25 +55,25 @@ export default function Future() {
                 <div className='Object'>
                     <div className='triangle' style={{ transform: `rotateY(${trianglePosition}deg)` }}>
                         {/* Programming Languages */}
-                        <div className={`side languages position1 ${languagesPosition === 1 ? 'triangleFront' : 'triangleSide'}`}>
-                            <h4>Programming Languages</h4>
-                            <ul>
+                        <div className={`side position1 ${languagesPosition === 1 ? 'triangleFront' : 'triangleSide'}`}>
+                            <h4 className='triangleTitle'>Programming Languages</h4>
+                            <ul className='triangleList'>
                                 {languageItems}
                             </ul>
                         </div>
 
                         {/* Libraries and Frameworks */}
-                        <div className={`side frameworks position2 ${frameworksPosition === 1 ? 'triangleFront' : 'triangleSide'}`}>
-                            <h4>Libraries & Frameworks</h4>
-                            <ul>
+                        <div className={`side position2 ${frameworksPosition === 1 ? 'triangleFront' : 'triangleSide'}`}>
+                            <h4 className='triangleTitle'>Libraries & Frameworks</h4>
+                            <ul className='triangleList'>
                                 {frameworkItems}
                             </ul>
                         </div>
 
                         {/* Tools and Platforms */}
-                        <div className={`side tools position3 ${toolsPosition === 1 ? 'triangleFront' : 'triangleSide'}`}>
-                            <h4>Tools & Platforms</h4>
-                            <ul>
+                        <div className={`side position3 ${toolsPosition === 1 ? 'triangleFront' : 'triangleSide'}`}>
+                            <h4 className='triangleTitle'>Tools & Platforms</h4>
+                            <ul className='triangleList'>
                                 {toolItems}
                             </ul>
                         </div>
