@@ -152,6 +152,8 @@
 .Object{
     perspective: 2000px;
     height: 100%;
+    /* transform: rotateY(40deg) rotateX(20deg) rotateZ(60deg); */
+    transform-style: preserve-3d;
 }
 
 .triangle {
@@ -161,7 +163,6 @@
     transform-style: preserve-3d;
     height: 550px;
     width: 450px;
-    border: 4px dashed orange;
 
 
     transition: transform 1.2s ease-out;
@@ -174,7 +175,16 @@
     position: absolute;
     backface-visibility: hidden;
 }
-.languages{
+
+.triangleButtonLeft {
+    writing-mode:sideways-lr;
+}
+
+.triangleButtonRight {
+    writing-mode:sideways-rl;
+}
+
+/* .languages{
     background-color: pink;
 }
 
@@ -184,10 +194,10 @@
 
 .tools{
     background-color: red;   
-}
+} */
 
 :root{
-    --axisDistance: 116px;
+    --axisDistance: 150px;
 }
 
 .position1{
