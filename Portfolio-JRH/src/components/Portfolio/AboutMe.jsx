@@ -22,7 +22,7 @@ export default function AboutMe() {
         { id: 'future', name: 'Future Plans' }
     ];
 
-    const [aboutContent, setAboutContent] = useState('skills');
+    const [aboutContent, setAboutContent] = useState('future');
 
     function runSwitchAbout(id) {
         setAboutContent(id);
@@ -46,9 +46,10 @@ export default function AboutMe() {
 
     return (
         <>
+            <div className='top-space-large top-space-small'></div>
             {/* About Me */}
             <div className='container ' id="about-me">
-                <div className='space-large space-small'></div>
+
 
                 <div className='row mb-3'>
                     <h2 className={textColor}>About Me!</h2>
@@ -73,6 +74,7 @@ export default function AboutMe() {
                     </div>
                 </div>
             </div>
+            <div className='bottom-space-large bottom-space-small'></div>
         </>
     )
 };

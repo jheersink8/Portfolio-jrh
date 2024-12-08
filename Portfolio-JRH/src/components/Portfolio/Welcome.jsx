@@ -11,8 +11,7 @@ export default function Welcome() {
     return (
         <>
             {/* Welcome */}
-            <div className='space-large space-small'></div>
-
+            <div className='header-space-large header-space-small'></div>
             <div style={{ backgroundColor: 'transparent' }}>
                 <div className='container'>
                     <div className='row'>
@@ -42,6 +41,7 @@ export default function Welcome() {
                     </div>
                 </div>
             </div>
+            <div className='bottom-space-large bottom-space-small'></div>
         </>
     )
 };

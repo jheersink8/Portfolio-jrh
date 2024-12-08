@@ -67,7 +67,7 @@ export default function Skills() {
     return (
         <div>
             {/* Skills */}
-            <h3>My Web Development Toolbelt</h3>
+            <h3 className='text-center'>My Web Development Toolbelt</h3>
             <div className='container'>
                 <div className='row'>{listSVG}</div>
             </div >

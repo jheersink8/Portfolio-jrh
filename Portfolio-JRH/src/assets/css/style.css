@@ -1,13 +1,58 @@
 /* GENERAL */
-/* Section Spacers */
+/* SECTION SPACERS */
+/* Header spacer - monitor */
 @media (min-width: 992px) {
-    .space-large {
-        padding-top: 20rem;
+    .header-space-large {
+        padding-top: 13rem;
+    }
+}
+/* Header spacer - mobile */
+@media (max-width: 991px) {
+    .header-space-small {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+/* Top spacer standard - monitor */
+@media (min-width: 992px) {
+    .top-space-large {
+        padding-top: 6rem;
     }
 }
 
+/* Top spacer standard - mobile */
 @media (max-width: 991px) {
-    .space-small {
+    .top-space-small {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+/* Bottom spacer standard - monitor */
+@media (min-width: 992px) {
+    .bottom-space-large {
+        padding-top: 2rem;
+    }
+}
+
+/* Bottom spacer standard - mobile */
+@media (max-width: 991px) {
+    .bottom-space-small {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+/* Footer spacer - monitor */
+@media (min-width: 992px) {
+    .footer-space-large {
+        padding-top: 13rem;
+    }
+}
+
+/* Footer spacer - mobile */
+@media (max-width: 991px) {
+    .footer-space-small {
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
@@ -72,7 +117,7 @@
     box-shadow: 20px 20px 100px 5px #5c7070;
 }
 
-/* What I know */
+/* About Me - What I know */
 .cardFlip {
     padding: 10px;
     margin: 10px;
@@ -92,4 +137,67 @@
     backface-visibility: hidden;
     text-align: center;
     font-size: 2.0rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* Triangle  */
+.Object{
+    perspective: 2000px;
+    height: 100%;
+}
+
+.triangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    height: 550px;
+    width: 450px;
+    border: 4px dashed orange;
+
+
+    transition: transform 1.2s ease-out;
+}
+
+
+.languages, .frameworks, .tools {
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.languages{
+    background-color: pink;
+}
+
+.frameworks{
+    background-color: green;  
+}
+
+.tools{
+    background-color: red;   
+}
+
+:root{
+    --axisDistance: 116px;
+}
+
+.position1{
+    transform: rotateY(0deg) translateZ(var(--axisDistance));
+}
+
+.position2{
+    transform: rotateY(240deg) translateZ(var(--axisDistance));
+}
+
+.position3{
+    transform: rotateY(120deg) translateZ(var(--axisDistance));
 }
