@@ -45,12 +45,13 @@ export default function Future() {
             <h3 className='text-center'>What I'm Learning Next</h3>
             <div className='d-flex justify-content-around'>
 
-
-                <button
-                    onClick={runLeft}
-                    className='triangleButtonLeft'>
-                    {languagesPosition === 3 ? 'Programming Languages' : frameworksPosition === 3 ? 'Libraries & Frameworks' : 'Tools & Platforms'}
-                </button>
+                <div className='d-flex align-items-center'>
+                    <button
+                        onClick={runLeft}
+                        className='triangleButtonLeft'>
+                        {languagesPosition === 3 ? 'Programming Languages' : frameworksPosition === 3 ? 'Libraries & Frameworks' : 'Tools & Platforms'}
+                    </button>
+                </div>
 
                 <div className='Object'>
                     <div className='triangle' style={{ transform: `rotateY(${trianglePosition}deg)` }}>
@@ -79,11 +80,13 @@ export default function Future() {
                         </div>
                     </div>
                 </div>
-                <button
-                    onClick={runRight}
-                    className='triangleButtonRight'>
-                    {languagesPosition === 2 ? 'Programming Languages' : frameworksPosition === 2 ? 'Libraries & Frameworks' : 'Tools & Platforms'}
-                </button>
+                <div className='d-flex align-items-center'>
+                    <button
+                        onClick={runRight}
+                        className={`triangleButtonRight`}>
+                        {languagesPosition === 2 ? 'Programming Languages' : frameworksPosition === 2 ? 'Libraries & Frameworks' : 'Tools & Platforms'}
+                    </button>
+                </div>
             </div>
         </>
     );

@@ -52,7 +52,7 @@ const tools = [
     },
     {
         id: 2,
-        learn: 'Heroku',
+        learn: 'Microsoft Azure',
         svg: 'Placeholder'
     },
     {

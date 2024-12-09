@@ -3,7 +3,8 @@
     perspective: 1000px;
 }
 
-.flip, .unflip {
+.flip,
+.unflip {
     transition: transform 1.2s ease-out;
 }
 
@@ -35,24 +36,7 @@
     transition: border 1.5s ease-out, filter .8s ease-out;
 }
 
-.position1, .position2, .position3 {
-    animation: expandAndContract 2s ease-in-out;
-}
-
-@keyframes expandAndContract {
-    0% {
-        --axisDistance: 150px;
-    }
-    25% {
-        --axisDistance: 300px;
-    }
-    50% {
-        --axisDistance: 300px;
-    }
-    75% {
-        --axisDistance: 150px;
-    }
-    100% {
-        --axisDistance: 150px;
-    }
+.triangleButtonLeft:hover,
+.triangleButtonRight:hover {
+    background-color: rgba(92, 112, 112, .9);
 }
